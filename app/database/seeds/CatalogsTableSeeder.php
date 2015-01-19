@@ -1,0 +1,190 @@
+<?php
+
+
+class CatalogsTableSeeder extends Seeder {
+
+	public function run()
+	{
+		Catalog::create([
+                    'id'=>1,
+                    'c'=>'1',
+                    'sc'=>'3',
+                    'g'=>'2',
+                    'sg'=>'3',
+                    'p'=>'03',
+                    'sp'=>'01',
+                    'r'=>'0',
+                    'sr'=>'0',
+                    'f'=>'000',
+                    'name'=>'Intereses s/ cuentas corrientes y otros depósitos en bancos estatales',
+                    'type'=>'ingresos',
+                    'groups_id'=>1
+			]);
+                Catalog::create([
+                    'id'=>2,
+                    'c'=>'1',
+                    'sc'=>'4',
+                    'g'=>'1',
+                    'sg'=>'1',
+                    'p'=>'00',
+                    'sp'=>'00',
+                    'r'=>'0',
+                    'sr'=>'0',
+                    'f'=>'000',
+                    'name'=>'Tranferencias Corrientes del Gobierno Central',
+                    'type'=>'ingresos',
+                    'groups_id'=>1
+			]);
+                Catalog::create([
+                    'id'=>3,
+                    'c'=>'3',
+                    'sc'=>'3',
+                    'g'=>'2',
+                    'sg'=>'0',
+                    'p'=>'00',
+                    'sp'=>'00',
+                    'r'=>'0',
+                    'sr'=>'0',
+                    'f'=>'000',
+                    'name'=>'Superavit Especifico',
+                    'type'=>'ingresos',
+                    'groups_id'=>2
+			]);
+                Catalog::create([
+                    'id'=>4,
+                    'c'=>'',
+                    'sc'=>'',
+                    'g'=>'01',
+                    'sg'=>'0',
+                    'p'=>'0',
+                    'sp'=>'01',
+                    'r'=>'0',
+                    'sr'=>'0',
+                    'f'=>'000',
+                    'name'=>'Sueldos para Cargos Fijos',
+                    'type'=>'gastos',
+                    'groups_id'=>3
+			]);
+                Catalog::create([
+                    'id'=>5,
+                    'c'=>'',
+                    'sc'=>'',
+                    'g'=>'01',
+                    'sg'=>'',
+                    'p'=>'0',
+                    'sp'=>'02',
+                    'r'=>'',
+                    'sr'=>'',
+                    'f'=>'',
+                    'name'=>'Jornales',
+                    'type'=>'gastos',
+                    'groups_id'=>3
+			]);
+                Catalog::create([
+                    'id'=>6,
+                    'c'=>'',
+                    'sc'=>'',
+                    'g'=>'01',
+                    'sg'=>'',
+                    'p'=>'0',
+                    'sp'=>'01',
+                    'r'=>'',
+                    'sr'=>'',
+                    'f'=>'',
+                    'name'=>'Tiempo extraordinario',
+                    'type'=>'gastos',
+                    'groups_id'=>3
+			]);
+                Catalog::create([
+                    'id'=>7,
+                    'c'=>'',
+                    'sc'=>'',
+                    'g'=>'03',
+                    'sg'=>'',
+                    'p'=>'0',
+                    'sp'=>'03',
+                    'r'=>'',
+                    'sr'=>'',
+                    'f'=>'',
+                    'name'=>'Decimotercer mes',
+                    'type'=>'gastos',
+                    'groups_id'=>3
+			]);
+                Catalog::create([
+                    'id'=>8,
+                    'c'=>'',
+                    'sc'=>'',
+                    'g'=>'04',
+                    'sg'=>'',
+                    'p'=>'0',
+                    'sp'=>'01',
+                    'r'=>'',
+                    'sr'=>'',
+                    'f'=>'',
+                    'name'=>'Contribución patronal al seguro de salud de la C.C.S.S.',
+                    'type'=>'gastos',
+                    'groups_id'=>3
+			]);
+                Catalog::create([
+                    'id'=>9,
+                    'c'=>'',
+                    'sc'=>'',
+                    'g'=>'04',
+                    'sg'=>'',
+                    'p'=>'0',
+                    'sp'=>'02',
+                    'r'=>'',
+                    'sr'=>'',
+                    'f'=>'',
+                    'name'=>'Contribución patronal al IMAS',
+                    'type'=>'gastos',
+                    'groups_id'=>3
+			]);
+                Catalog::create([
+                    'id'=>10,
+                    'c'=>'',
+                    'sc'=>'',
+                    'g'=>'04',
+                    'sg'=>'',
+                    'p'=>'0',
+                    'sp'=>'03',
+                    'r'=>'',
+                    'sr'=>'',
+                    'f'=>'',
+                    'name'=>'Contribucion patronal al INA',
+                    'type'=>'gastos',
+                    'groups_id'=>3
+			]);
+                Catalog::create([
+                    'id'=>11,
+                    'c'=>'',
+                    'sc'=>'',
+                    'g'=>'02',
+                    'sg'=>'',
+                    'p'=>'1',
+                    'sp'=>'01',
+                    'r'=>'',
+                    'sr'=>'',
+                    'f'=>'',
+                    'name'=>'servicios de agua y alcantarillado',
+                    'type'=>'gastos',
+                    'groups_id'=>4
+			]);
+                Catalog::create([
+                    'id'=>12,
+                    'c'=>'',
+                    'sc'=>'',
+                    'g'=>'02',
+                    'sg'=>'',
+                    'p'=>'1',
+                    'sp'=>'02',
+                    'r'=>'',
+                    'sr'=>'',
+                    'f'=>'',
+                    'name'=>'Servicio de energia electrica',
+                    'type'=>'gastos',
+                    'groups_id'=>4
+			]);
+	}
+
+}

@@ -1,0 +1,17 @@
+.fondo{
+	background-color: #006BB6;
+}
+
+.form-special{
+	padding-top: 35px;
+	width: 70%;
+ 	margin: 0 auto;
+
+}
+
+body{
+	padding-top: 0px;
+}
+.errorMessage{
+    color: #DD1144;
+}
