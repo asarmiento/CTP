@@ -12,15 +12,15 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quepos Diurno<span class="caret"></span></a>  
                     <ul class="dropdown-menu" role="menu">                        
                         <li><a>{{ HTML::link('/setup/', 'Configuracion') }}</a></li>    
-                        <li><a>{{ HTML::link('/grupos/', 'Lista Grupos de Cuentas') }}</a></li>    
-                        <li><a>{{ HTML::link('/catalogos/', 'Lista Catalogo') }}</a></li>    
-                        <li><a>{{ HTML::link('/tpresupuestos/', 'Tipos de Presupuesto') }}</a></li>                  
-                        <li><a>{{ HTML::link('/presupuestos/', 'Presupuestos') }}</a></li>                  
-                        <li><a>{{ HTML::link('/saldopresupuestos/', 'Saldo Cuenta Presupuestos') }}</a></li>                  
-                        <li><a>{{ HTML::link('/planillas/', 'Planillas') }}</a></li>                  
-                        <li><a>{{ HTML::link('/cheques/', 'Cheques') }}</a></li>                  
-                        <li><a>{{ HTML::link('/transferencias/', 'Transferencias') }}</a></li>                  
-                        <li><a>{{ HTML::link('/proveedores/', 'Proveedores') }}</a></li>                  
+                        <li><a>{{ HTML::link('/groups/', 'Lista Grupos de Cuentas') }}</a></li>    
+                        <li><a>{{ HTML::link('/catalogs/', 'Lista Catalogo') }}</a></li>    
+                        <li><a>{{ HTML::link('/budgettype/', 'Tipos de Presupuesto') }}</a></li>                  
+                        <li><a>{{ HTML::link('/budgets/', 'Presupuestos') }}</a></li>                  
+                        <li><a>{{ HTML::link('/balancebusgets/', 'Saldo Cuenta Presupuestos') }}</a></li>                  
+                        <li><a>{{ HTML::link('/spreadsheets/', 'Planillas') }}</a></li>                  
+                        <li><a>{{ HTML::link('/checks/', 'Cheques') }}</a></li>                  
+                        <li><a>{{ HTML::link('/transfers/', 'Transferencias') }}</a></li>                  
+                        <li><a>{{ HTML::link('/suppliers/', 'Proveedores') }}</a></li>                  
                     </ul>               
                 </li>               
                 <li class="dropdown">   

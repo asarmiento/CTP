@@ -22,10 +22,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'friendly_mep',
-			'username'  => 'root',
-			'password'  => 'F4cc0unt',
+			'host'      => '192.185.173.67',
+			'database'  => 'scontaro_public',
+			'username'  => 'scontaro_gbook',
+			'password'  => 'XS_U6gR664fM',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

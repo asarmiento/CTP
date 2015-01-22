@@ -25,3 +25,4 @@ Route::resource('groups', 'GroupsController');
 Route::resource('transfers', 'TransfersController');
 Route::resource('balancebudgets', 'BalanceBudgetsController');
 Route::resource('setup', 'SetupController');
+Route::resource('test', 'TestController');

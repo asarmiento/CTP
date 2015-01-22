@@ -47,9 +47,9 @@
         @foreach($resultado As $datos) <?php $i++; ?>
         <tr>  
             <td>{{$i}}</td>
-            <td>{{$datos->nombre}}</td>
-            <td>{{($datos->fuente)}}</td>
-            <td>{{$datos->descripcion}}</td>
+            <td>{{$datos->name}}</td>
+            <td>{{($datos->source)}}</td>
+            <td>{{$datos->description}}</td>
             <td>{{$datos->year}}</td>
             @if($datos->tipo==0)
             <td>Ordinario</td>

@@ -1,20 +1,7 @@
 <?php
-use HireMe\Entities\Catalog;
-use HireMe\Entities\Group;
-use HireMe\Components\FieldBuilder;
-use HireMe\Managers\CatalogsManagers;
-use HireMe\Managers\GruposManagers;
-use HireMe\Repositories\CatalogRepo;
-use HireMe\Repositories\GroupRepo;
+
 class CatalogsController extends \BaseController {
     
-    protected $catalogoRepo;
-    protected $grupoRepo;
-
-    public function __construct(CatalogRepo $catalogoRepo, GroupRepo $grupoRepo) {
-        $this->CatalogoRepo = $catalogoRepo;
-        $this->GrupoRepo = $grupoRepo;
-    }
 
     /**
      * @author Anwar Sarmiento

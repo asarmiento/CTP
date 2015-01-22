@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateSupportTable extends Migration {
+class CreateSupportsTable extends Migration {
 
     /**
      * Run the migrations.
@@ -11,7 +11,7 @@ class CreateSupportTable extends Migration {
      * @return void
      */
     public function up() {
-        Schema::create('support', function(Blueprint $table) {
+        Schema::create('supports', function(Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->text('message');
@@ -31,7 +31,7 @@ class CreateSupportTable extends Migration {
      * @return void
      */
     public function down() {
-        Schema::drop('support');
+        Schema::drop('supports');
     }
 
 }

@@ -16,7 +16,9 @@ class CreateSchoolsHasUsersTable extends Migration {
             $table->foreign('schools_id')->references('id')->on('schools')->onDelete('no action');
             $table->integer('users_id')->unsigned()->index();
             $table->foreign('users_id')->references('id')->on('users')->onDelete('no action');
+            $table->engine = 'InnoDB';
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

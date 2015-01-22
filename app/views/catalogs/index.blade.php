@@ -49,7 +49,7 @@ Listas del Catalogo de Cuentas
     <thead>
     <tbody>    
         <!-- inicio mostramos todos los datos de la tabla catalogo -->
-        @foreach($resultado As $datos) <?php //dd($datos); // ?>
+        @foreach($resultado As $datos) <?php dd($datos->group); // ?>
         <tr>  
             <td>{{$datos->c}}</td>
             <td>{{$datos->sc}}</td>
@@ -66,7 +66,7 @@ Listas del Catalogo de Cuentas
             @else
             <td>Gastos</td>
             @endif
-            <td>{{$datos->groups->name}}</td>
+            <td>{{$datos->group->name}}</td>
             <td><a class="btn btn-warning" href="{{URL::action('CatalogsController@edit',$datos->id)}}"><span class="glyphicon glyphicon-pencil"></span></a></td>
         </tr>
         @endforeach

@@ -1,15 +1,12 @@
 <?php
-use HireMe\Components\FieldBuilder;
-use HireMe\Entities\Catalog;
-use HireMe\Managers\CatalogsManagers;
-use HireMe\Repositories\CatalogRepo;
+
 class TestController extends \BaseController {
 
-    public function show() {
+    public function index() {
         
-	      $test = Catalog::all();
+	      $test = Catalog::find(1);
 
-        echo json_encode($test);
+        echo json_encode($test->group);
     }
 
 }

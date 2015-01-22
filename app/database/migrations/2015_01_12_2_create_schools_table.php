@@ -23,7 +23,9 @@ class CreateSchoolsTable extends Migration {
             $table->string('account');
             $table->string('title_1');
             $table->string('title_2');
+            $table->engine = 'InnoDB';
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

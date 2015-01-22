@@ -1,17 +1,8 @@
 <?php
-use HireMe\Entities\Group;
-use HireMe\Managers\GroupsManagers;
-use HireMe\Managers\GroupsUpdateManagers;
-use HireMe\Repositories\GroupRepo;
-use \HireMe\Components\FieldBuilder;
+
 
 class GroupsController extends \BaseController {
 
-    protected $grupoRepo;
-
-    public function __construct(GrupoRepo $grupoRepo) {
-        $this->grupoRepo = $grupoRepo;
-    }
 
     /**
      * Display a listing of the resource.
@@ -19,8 +10,8 @@ class GroupsController extends \BaseController {
      * @return Response
      */
     public function index() {
-        $resultado = Grupo::paginate(15);
-        return View::make('grupos/index', compact('resultado'));
+        $resultado = Group::paginate(15);
+        return View::make('groups/index', compact('resultado'));
     }
 
     /**
@@ -32,7 +23,7 @@ class GroupsController extends \BaseController {
         $form_data = array('route' => 'grupos.store', 'method' => 'POST');
         $action = 'Crear';
         $grupos=array();
-        return View::make('grupos/create', compact('grupos', 'form_data', 'action'));
+        return View::make('groups/create', compact('grupos', 'form_data', 'action'));
     }
 
     /**
@@ -46,7 +37,7 @@ class GroupsController extends \BaseController {
 
         $manager->save();
          $resultado = Grupo::paginate(15);
-        return View::make('grupos/index', compact('resultado'))->with(['message' => '']);
+        return View::make('groups/index', compact('resultado'))->with(['message' => '']);
     }
 
     /**
